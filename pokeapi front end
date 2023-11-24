@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Pokedex</title>
+
+    <style>
+
+        #pesquisa {
+            background: #d62929;
+            font-family:Arial  ;
+            padding: 10px;
+            text-align: center;
+            border: solid 2px #333;
+        }
+
+        .pokemon{
+            width: 20%;
+            border: solid 2px #333;
+            text-align: center;
+            padding: 15px;
+            floar: left;
+            .pokemon img{
+                max width: 100%;
+            }
+            
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    
+ <div id="pesquisa">
+    <form>
+        <input type="text" placeholder= "Digite o Pokémon">
+        <input type="submit" value="buscar">
+    </form>
+ </div> 
+
+ <div id="pokemons">
+     <?php for($i = 0;$i < 20; $i++): ?>
+    <div class="pokemon">
+
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png" alt="Rayquaza"
+    width="200px">
+
+    <h1>Rayquaza</h1>
+    <p>peso: 206.5</p>
+    <p>altura: 7.0 m</p>
+
+    </div>
+    <?php endfor; ?>
+ </div>
+
+</body>
+</html>
